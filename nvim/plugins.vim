@@ -24,8 +24,6 @@ Plug 'othree/html5.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 " Plug 'ternjs/tern_for_vim'
-Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'vimlab/split-term.vim'
@@ -49,5 +47,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rakr/vim-one'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'peitalin/vim-jsx-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['jsx', 'tsx']
+" Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()

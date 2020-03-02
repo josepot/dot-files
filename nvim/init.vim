@@ -187,12 +187,12 @@ map <C-n> :NERDTreeToggle<CR>
 set number relativenumber
 
 " TRUE COLORS (EVEN INSIDE TMUX)
-set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 
 syntax on
-colorscheme onedark
+colorscheme gruvbox
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -227,3 +227,19 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 nmap <silent> <leader>dd <Plug>(coc-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>dj <Plug>(coc-implementation)
+
+" colors from vim-jsx-typescript
+" dark red
+" hi tsxTagName guifg=#E06C75
+" orange
+" hi tsxCloseString guifg=#F99575
+" hi tsxCloseTag guifg=#F99575
+" hi tsxCloseTagName guifg=#F99575
+" hi tsxAttributeBraces guifg=#F99575
+" hi tsxEqual guifg=#F99575
+" yellow
+" hi tsxAttrib guifg=#F8BD7F cterm=italic
+" light-grey
+" hi tsxTypeBraces guifg=#999999
+" dark-grey
+" hi tsxTypes guifg=#666666
