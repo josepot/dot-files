@@ -6,8 +6,6 @@ let g:vim_markdown_fenced_languages = ['javascript', 'js=javascript', 'json=java
 " Let .js files be recognized as JSX
 let g:jsx_ext_required = 0
 
-" Highlight JSON files as javascript
-autocmd BufRead,BufNewFile *.json set filetype=javascript
 " coc-prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
