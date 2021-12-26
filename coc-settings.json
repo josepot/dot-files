@@ -1,3 +1,10 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"]
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•",
+  "tsserver.npm": "/Users/josep/.nvm/versions/node/v16.12.0/bin/npm"
 }

@@ -18,7 +18,6 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/bundle')
 
-set rtp+=~/.fzf
 set runtimepath^=~/.vim
 let &packpath = &runtimepath
 
@@ -38,8 +37,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'elixir-editors/vim-elixir'
 " File Control / Formatting
 Plug 'ctrlpvim/ctrlp.vim'
-Plug '~/.fzf'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'majutsushi/tagbar'
@@ -72,7 +71,7 @@ Plug 'Shougo/neosnippet-snippets'
 " TypeScript
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'othree/yajs.vim'
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+" Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
